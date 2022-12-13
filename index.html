@@ -12,27 +12,33 @@
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!--====================Envoie Email JS ====================-->
-
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
-        crossorigin="anonymous">
-
-        <script src="assets/js/email.js"></script>
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-        </script>
-           <script type="text/javascript">
-            (function(){
-                emailjs.init("vEDz-i3GZyZd2anNZ");
-            })();
-            </script>
-
         <title>Djiguiba portfolio</title>
+
+          <!--====================Envoie Email JS ====================-->
+
+          <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+          crossorigin="anonymous"> -->
+  
+          <script src="assets/js/email.js"></script>
+          <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+          </script>
+             <script type="text/javascript">
+              (function(){
+                  emailjs.init("vEDz-i3GZyZd2anNZ");
+              })();
+              </script>
+
+       
         
     </head>
+
     <body>
+ 
+
+
+
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -986,17 +992,20 @@
                         <label for="message" class="contact_label">Message</label>
                         <textarea name="" id="message" cols="0" rows="7" class="contact_input"></textarea>
                     </div>
-                    <div>
 
-
-                        <!-- <a href="#" class="button button--flex">
+                    <!-- <div>
+                        <a href="#" class="button button--flex" >
                             Envoyer 
-                            <i class="uil uil-message button_icon"></i>
-                        </a> -->
+                            <i class="uil uil-message button_icon" ></i>
+                        </a>
+                    </div> -->
+
+                    <div class="envoie">
+                        <button class="btn btn-primary" onclick="sendMail()">Envoyer                        <i class="uil uil-message button_icon" ></i>
+                        </button>
+
+
                     </div>
-
-                    <button class="btn btn-primary" onclick="sendMail()">Envoyer</button>
-
                 </form>
               </div>
             </section>

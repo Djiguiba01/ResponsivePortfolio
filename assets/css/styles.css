@@ -209,6 +209,14 @@ img {
   font-size: 1.25rem;
   cursor: pointer;
 }
+button{
+  background-color: darkslateblue;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  color: #FFF;
+  font-size: 18px;
+}
 
 @media screen and (max-width: 767px){
   .nav_menu{
